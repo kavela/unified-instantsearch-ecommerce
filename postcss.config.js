@@ -18,6 +18,9 @@ module.exports = {
     postcssPresetEnv({
       features: {
         'custom-media-queries': true,
+        'custom-properties': {
+          'disableDeprecationNotice': true
+        }
       },
       importFrom: () => {
         const customProperties = {
